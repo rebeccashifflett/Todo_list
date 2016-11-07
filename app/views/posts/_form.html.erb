@@ -1,0 +1,18 @@
+<%= form_for @post do |f| %>
+  <br />
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br />
+
+  <%= f.label :items %>
+  <%= f.text_area :items %>
+  <br />
+
+  <%= f.label :public %>
+  <%= f.check_box :public %>
+  <br />
+
+
+  <%= f.submit %>
+<% end %>

@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: #E8DD9C;
+
+}
+
+h1 {
+  font-family: Courier New;
+  color: grey;
+}
+
+a {
+  color: grey;
+  font-family: Courier New;
+}

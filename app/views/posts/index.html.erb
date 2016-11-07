@@ -1,0 +1,15 @@
+<h1>TO DO List</h1>
+<hr />
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= post.title %> -
+      <%= link_to 'Show List', post_path(post) %> -
+      <%= link_to 'Edit List', edit_post_path(post) %> -
+      <%= link_to 'Delete List', post_path(post), method: :delete, data: {confirm: 'really delete this post?'} %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'New Post', new_post_path %>
